@@ -3,11 +3,12 @@ using System.Collections.Generic;
 
 namespace CS.CursoMvc.Domain.Entities
 {
-    class Cliente
+    public class Cliente
     {
         public Cliente()
         {
             ClienteId = Guid.NewGuid();
+            Enderecos = new List<Endereco>();
         }
 
         public Guid ClienteId { get; set; }

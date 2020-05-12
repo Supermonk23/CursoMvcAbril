@@ -2,12 +2,11 @@
 
 namespace CS.CursoMvc.Domain.Entities
 {
-    class Endereco
+    public class Endereco
     {
         public Endereco()
         {
             EnderecoId = Guid.NewGuid();
-            ClienteId = Guid.NewGuid();
         }
 
         public Guid EnderecoId { get; set; }
